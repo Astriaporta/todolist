@@ -1,5 +1,7 @@
 <?php
 
+use Illuminate\Support\Facades\Route;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -12,7 +14,7 @@
 */
 
 Route::get('/', function (){
-  return view('layouts.index');
+  return view('home.index');
 });
 
 Route::prefix('/task')->group(function () {
